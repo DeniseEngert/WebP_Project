@@ -30,6 +30,8 @@
 
     <div class="above-game">
         <a class="restart-button">New Game</a>
+        <a class="change-dimensions" onclick="start2048(3);">3x3</a>
+        <a type="button" class="change-dimensions" onclick="start2048(4);">4x4</a>
     </div>
 
     <div class="game-container">
@@ -83,12 +85,6 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-
-  <div>
-    <button type="button" onclick="start2048(3);">3x3</button>
-    <button type="button" onclick="start2048(4);">4x4</button>
-    <a class="restart-button">New Game</a>
-  </div>
 
 </body>
 </html>
