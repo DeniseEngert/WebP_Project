@@ -103,19 +103,17 @@ h1.title {
     color: whitesmoke }
 
 .change-dimensions {
-    position: relative;
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 25px;
-    line-height: 47px;
-    font-weight: bold;
-    border-radius: 3px;
-    color: white;
-    margin-top: 8px;
-    text-align: center;
     display: inline-block;
     margin: 5px;
     background: lightcoral;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    display: block;
+    text-align: center;
     float: left;
 }
 
