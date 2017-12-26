@@ -6,6 +6,12 @@ ruleslink.addEventListener('click', openrules, false);
 leaderboardlink.addEventListener('click', openleaderboard, false);
 infolink.addEventListener('click', openinfo, false);
 
-function openrules(){}
-function openleaderboard(){}
-function openinfo(){}
+function openrules(e) {
+    e.preventDefault();
+}
+function openleaderboard(e) {
+    e.preventDefault();
+}
+function openinfo(e) {
+    e.preventDefault();
+}
