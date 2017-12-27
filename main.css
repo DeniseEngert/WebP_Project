@@ -791,15 +791,21 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     z-index: 2;
     cursor: pointer;
 }
 
-.overlay-headline {
+.overlay-layout{
     color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
-.overlay-text {
-    color: white;
+.overlay-headline {
+    margin: 10px;
 }
+
