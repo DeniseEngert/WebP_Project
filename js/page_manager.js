@@ -11,6 +11,16 @@ overlay.addEventListener('click', off, false);
 
 function openRules(){
     overlay.style.display = "block";
+    var headlineText = document.createTextNode("Rules");
+    var rulesText = document.createTextNode("1. Use keyboard arrows to move the tiles");
+    var headline = document.createElement('h1');
+    var rulesContainer = document.createElement('p');
+    headline.setAttribute("class", "overlay-headline");
+    rulesContainer.setAttribute("class", "overlay-text");
+    headline.appendChild(headlineText);
+    rulesContainer.appendChild(rulesText);
+    overlay.appendChild(headline);
+    overlay.appendChild(rulesContainer);
 }
 
 function openLeaderboard() {

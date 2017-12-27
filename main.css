@@ -795,3 +795,11 @@ hr {
     z-index: 2;
     cursor: pointer;
 }
+
+.overlay-headline {
+    color: white;
+}
+
+.overlay-text {
+    color: white;
+}
