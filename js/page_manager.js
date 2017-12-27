@@ -1,23 +1,27 @@
-var ruleslink = document.getElementById('rules');
-var leaderboardlink = document.getElementById('leaderboard');
-var infolink = document.getElementById('info');
-var contentbox;
+var rulesLink = document.getElementById('rules');
+var leaderboardLink = document.getElementById('leaderboard');
+var infoLink = document.getElementById('info');
+var overlay = document.getElementById('overlay');
 
-ruleslink.addEventListener('click', openrules, false);
-leaderboardlink.addEventListener('click', openleaderboard, false);
-infolink.addEventListener('click', openinfo, false);
 
-function openrules(e) {
-    e.preventDefault();
-    contentbox = document.createElement('div');
-    ruleslink.appendChild(contentbox);
-    contentbox.setAttribute("class", "content-overlay");
+rulesLink.addEventListener('click', openRules, false);
+leaderboardLink.addEventListener('click', openLeaderboard, false);
+infoLink.addEventListener('click', openInfo, false);
+overlay.addEventListener('click', off, false);
+
+function openRules(){
+    overlay.style.display = "block";
 }
-function openleaderboard(e) {
-    e.preventDefault();
 
+function openLeaderboard() {
+    overlay.style.display = "block";
 }
-function openinfo(e) {
-    e.preventDefault();
+function openInfo() {
+    overlay.style.display = "block";
+}
 
+
+function off() {
+    if (overlay.style.display == "block"){
+    overlay.style.display = "none";}
 }
