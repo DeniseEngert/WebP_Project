@@ -10,6 +10,9 @@ infoLink.addEventListener('click', openInfo, false);
 overlay.addEventListener('click', off, false);
 
 function openRules(){
+    while (overlay.hasChildNodes()) {
+        overlay.removeChild(overlay.lastChild);
+    }
     overlay.style.display = "block";
     var headlineText = document.createTextNode("Rules");
     var rulesText = document.createTextNode("1. Use keyboard arrows to move the tiles");
