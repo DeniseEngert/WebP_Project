@@ -49,9 +49,7 @@ li a {
 
 .heading:after {
     content: "";
-    /*display: inline-block;*/
     clear: both;
-
 }
 
 h1.title {
@@ -60,6 +58,27 @@ h1.title {
     float: left;
     margin: 20px;
 }
+
+.above-game:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+
+
+.restart-button {
+    display: block;
+    margin: 3px;
+    background: lightcoral;
+    border-radius: 3px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    float: left; }
+
 
 @-webkit-keyframes move-up {
     0% {
@@ -85,36 +104,10 @@ h1.title {
     100% {
         top: -50px;
         opacity: 0; } }
-.scores-container {
-    float: right;
-    text-align: right; }
 
-.score-container, .best-container {
-    position: relative;
-    display: inline-block;
-    background: #bbada0;
-    padding: 15px 25px;
-    font-size: 25px;
-    height: 25px;
-    line-height: 47px;
-    font-weight: bold;
-    border-radius: 3px;
-    color: white;
-    margin-top: 8px;
-    text-align: center; }
 
-.score-container:after, .best-container:after {
-    position: absolute;
-    width: 100%;
-    top: 10px;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 13px;
-    text-align: center;
-    color: whitesmoke }
 
-.score-container .score-addition, .best-container .score-addition {
+/*.score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
     color: red;
@@ -134,7 +127,7 @@ h1.title {
     content: "Score"; }
 
 .best-container:after {
-    content: "Best"; }
+    content: "Best"; }*/
 
 p {
     margin-top: 0;
@@ -548,23 +541,6 @@ hr {
     -moz-animation-fill-mode: backwards;
     animation-fill-mode: backwards; }
 
-.above-game:after {
-    content: "";
-    display: block;
-    clear: both; }
-
-.restart-button {
-    display: inline-block;
-    margin: 3px;
-    background: lightcoral;
-    border-radius: 3px;
-    padding: 0 15px;
-    text-decoration: none;
-    color: #f9f6f2;
-    height: 40px;
-    line-height: 42px;
-    text-align: center;
-    float: left; }
 
 .game-explanation {
     margin-top: 50px; }
@@ -815,6 +791,6 @@ hr {
     margin: 10px;
 }
 
-/* TODO change button alignment and add closing button to overlay
+/* TODO change button alignment and add closing button to overlay, make responsive, remove "waste"
 
 
