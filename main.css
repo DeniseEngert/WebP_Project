@@ -802,7 +802,7 @@ hr {
     cursor: pointer;
 }
 
-.overlay-layout{
+#overlay-container{
     color: white;
     position: absolute;
     top: 20%;
@@ -811,7 +811,10 @@ hr {
     transform: translate(-50%, -50%);
 }
 
-.overlay-headline {
+#overlay-headline {
     margin: 10px;
 }
+
+/* TODO change button alignment and add closing button to overlay
+
 
