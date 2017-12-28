@@ -4,12 +4,13 @@ var infoLink = document.getElementById('info');
 var overlay = document.getElementById('overlay');
 var overlayHeadline = document.getElementById('overlay-headline');
 var overlayText = document.getElementById('overlay-text');
+var closingButton = document.getElementById('closing-button');
 
 
 rulesLink.addEventListener('click', openRules, false);
 leaderboardLink.addEventListener('click', openLeaderboard, false);
 infoLink.addEventListener('click', openInfo, false);
-overlay.addEventListener('click', off, false);
+closingButton.addEventListener('click', off, false);
 
 function openRules(){
     overlay.style.display = "block";
@@ -28,7 +29,6 @@ function openInfo() {
     overlayHeadline.textContent = ("Info");
     overlayText.textContent = ("");
 }
-
 
 function off() {
     if (overlay.style.display == "block"){

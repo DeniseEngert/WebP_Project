@@ -778,19 +778,27 @@ hr {
     cursor: pointer;
 }
 
+
 #overlay-container{
     color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#overlay-text-container{
+    padding: 20px;
+}
+
+#closing-button {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    right: 200px;
 }
 
 #overlay-headline {
-    margin: 10px;
+    margin: 5px;
 }
 
-/* TODO change button alignment and add closing button to overlay, make responsive, remove "waste"
+/* TODO change button alignment and add closing button to overlay, make responsive, remove "waste", show score
 
 
