@@ -132,7 +132,7 @@ p {
     line-height: 1.65; }
 
 a {
-    color: #776e65;
+    color: #030303;
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer; }
@@ -211,7 +211,7 @@ hr {
     margin-top: 59px; }
 .game-container .game-message a {
     display: inline-block;
-    background: #8f7a66;
+    background: #030303;
     border-radius: 3px;
     padding: 0 20px;
     text-decoration: none;
@@ -416,7 +416,7 @@ hr {
         font-size: 15px; } }
 .tile.tile-super .tile-inner {
     color: #f9f6f2;
-    background: #000000;
+    background: #030303;
     font-size: 30px; }
 @media screen and (max-width: 520px) {
     .tile.tile-super .tile-inner {
@@ -583,7 +583,7 @@ hr {
         -ms-user-select: none;
         -ms-touch-action: none;
         touch-action: none;
-        background: #bbada0;
+        background: #030303;
         border-radius: 6px;
         width: 280px;
         height: 280px;
@@ -793,6 +793,6 @@ hr {
     margin: 5px;
 }
 
-/* TODO change button alignment, make responsive, remove "waste", show score
+/* TODO button alignment?, make responsive, remove "waste", show score
 
 
