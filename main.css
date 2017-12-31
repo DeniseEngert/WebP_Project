@@ -10,7 +10,6 @@ html, body{
 }
 
 body {
-    position: relative;
     background: #f6f6f6;
     color: #030303;
     font-family: Ubuntu, sans-serif;
@@ -67,9 +66,8 @@ h1.title {
 
 
 .restart-button {
-    display: block;
     margin: 3px;
-    background: lightcoral;
+    background: #907777;
     border-radius: 3px;
     padding: 0 15px;
     text-decoration: none;
@@ -107,10 +105,9 @@ h1.title {
 
 
 
-/*.score-container .score-addition, .best-container .score-addition {
+.score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
-    color: red;
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
@@ -127,7 +124,7 @@ h1.title {
     content: "Score"; }
 
 .best-container:after {
-    content: "Best"; }*/
+    content: "Best"; }
 
 p {
     margin-top: 0;
@@ -140,9 +137,6 @@ a {
     text-decoration: underline;
     cursor: pointer; }
 
-strong.important {
-    text-transform: uppercase; }
-
 hr {
     border: none;
     border-bottom: 1px solid #d8d4d0;
@@ -150,7 +144,7 @@ hr {
     margin-bottom: 30px; }
 
 .container {
-    width: 500px;
+    width: 550px;
     margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
