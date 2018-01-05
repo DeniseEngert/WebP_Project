@@ -16,6 +16,8 @@ body {
     font-size: 18px;
 }
 
+
+/* Navigation bar elements */
 .navigation-bar {
     background-color: black;
     padding: 18px;
@@ -46,6 +48,8 @@ li a {
     font-size: 22px;
 }
 
+
+/* Heading and game control elements */
 .heading:after {
     content: "";
     clear: both;
@@ -67,7 +71,7 @@ h1.title {
 
 .restart-button {
     margin: 3px;
-    background: #907777;
+    background: #205B60;
     border-radius: 3px;
     padding: 0 15px;
     text-decoration: none;
@@ -143,6 +147,8 @@ hr {
     margin-top: 20px;
     margin-bottom: 30px; }
 
+
+/* Game container */
 .container {
     width: 550px;
     margin: 0 auto; }
@@ -229,6 +235,8 @@ hr {
 .game-container .game-message.game-won, .game-container .game-message.game-over {
     display: block; }
 
+
+/* Grid elements*/
 .grid-container {
     position: absolute;
     z-index: 1; }
@@ -252,6 +260,8 @@ hr {
 .grid-cell:last-child {
     margin-right: 0; }
 
+
+/* Tiles */
 .tile-container {
     position: absolute;
     z-index: 2; }
@@ -357,42 +367,40 @@ hr {
     z-index: 10;
     font-size: 55px; }
 .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: #A4B0BC;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 .tile.tile-4 .tile-inner {
-    background: #b09696;
+    background: #8C8AB0;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #907777; }
+    background: #9173A4; }
 .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #836565; }
+    background: #985E8E; }
 .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #815959; }
+    background: #8D4A5C; }
 .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background:#743838; }
+    background:#814E39; }
 .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: #7a1e1e;
-    box-shadow: 0 0 30px 10px rgba(144, 119, 119, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    background: #756A2A;
     font-size: 45px; }
 @media screen and (max-width: 520px) {
     .tile.tile-128 .tile-inner {
         font-size: 25px; } }
 .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: #740303;
-    box-shadow: 0 0 30px 10px rgba(144, 119, 119, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    background: #4A6A1C;
     font-size: 45px; }
 @media screen and (max-width: 520px) {
     .tile.tile-256 .tile-inner {
         font-size: 25px; } }
 .tile.tile-512 .tile-inner {
     color: #f9f6f2;
-    background: #4d0202;
+    background: #135E11;
     box-shadow: 0 0 30px 10px rgba(144, 119, 119, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
 @media screen and (max-width: 520px) {
@@ -400,28 +408,28 @@ hr {
         font-size: 25px; } }
 .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
-    background: #400000;
-    box-shadow: 0 0 30px 10px rgba(144, 119, 119, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    background: #08522F;
     font-size: 35px; }
 @media screen and (max-width: 520px) {
     .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
 .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
-    background: #1c0101;
-    box-shadow: 0 0 30px 10px rgba(144, 119, 119, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    background: #014147;
     font-size: 35px; }
 @media screen and (max-width: 520px) {
     .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
 .tile.tile-super .tile-inner {
     color: #f9f6f2;
-    background: #030303;
+    background: #014147;
     font-size: 30px; }
 @media screen and (max-width: 520px) {
     .tile.tile-super .tile-inner {
         font-size: 10px; } }
 
+
+/* Appearance */
 @-webkit-keyframes appear {
     0% {
         opacity: 0;
@@ -536,9 +544,7 @@ hr {
     animation-fill-mode: backwards; }
 
 
-.game-explanation {
-    margin-top: 50px; }
-
+/* Responsive design? */
 @media screen and (max-width: 520px) {
     html, body {
         font-size: 15px; }
@@ -758,6 +764,8 @@ hr {
     .game-message .lower {
         margin-top: 30px !important; } }
 
+
+/* Overlays */
 #overlay {
     position: fixed;
     display: none;
@@ -771,7 +779,6 @@ hr {
     z-index: 2;
     cursor: pointer;
 }
-
 
 #overlay-container{
     color: white;
