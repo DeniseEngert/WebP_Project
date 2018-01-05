@@ -71,7 +71,7 @@ h1.title {
 
 .restart-button {
     margin: 3px;
-    background: #205B60;
+    background: #014147;
     border-radius: 3px;
     padding: 0 15px;
     text-decoration: none;
@@ -228,7 +228,7 @@ hr {
 .game-container .game-message a.keep-playing-button {
     display: none; }
 .game-container .game-message.game-won {
-    background: rgba(237, 194, 46, 0.5);
+    background: rgba(141, 74, 92, 0.7);
     color: #f9f6f2; }
 .game-container .game-message.game-won a.keep-playing-button {
     display: inline-block; }
@@ -623,7 +623,7 @@ hr {
         margin-top: 59px; }
     .game-container .game-message a {
         display: inline-block;
-        background: #8f7a66;
+        background: #8D4A5C;
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
@@ -634,7 +634,7 @@ hr {
     .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-        background: rgba(237, 194, 46, 0.5);
+        background: rgba(141, 74, 92, 0.7);
         color: #f9f6f2; }
     .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
