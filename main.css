@@ -40,8 +40,8 @@ ul {
 li a {
     display: inline-block;
     padding: 15px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -150,7 +150,7 @@ hr {
 
 /* Game container */
 .container {
-    width: 550px;
+    width: 540px;
     margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
@@ -544,14 +544,26 @@ hr {
     animation-fill-mode: backwards; }
 
 
-/* Responsive design? */
+/* Responsive design */
 @media screen and (max-width: 520px) {
     html, body {
         font-size: 15px; }
 
     body {
-        margin: 20px 0;
-        padding: 0 20px; }
+        margin:  0;
+        padding: 0; }
+
+    .navigation-bar{
+      padding: 3px;
+    }
+
+    li a {
+        display: inline-block;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
 
     h1.title {
         font-size: 27px;
@@ -570,8 +582,11 @@ hr {
         margin-bottom: 10px; }
 
     .restart-button {
-        width: 42%;
-        margin: 10px;
+        width: 20%;
+        margin: 5px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 32px;
         padding: 0;
         display: block;
         box-sizing: border-box;
@@ -762,7 +777,9 @@ hr {
         line-height: 30px !important;
         margin-top: 90px !important; }
     .game-message .lower {
-        margin-top: 30px !important; } }
+        margin-top: 30px !important; }
+
+    }
 
 
 /* Overlays */
