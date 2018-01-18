@@ -6,6 +6,7 @@ var overlayHeadline = document.getElementById('overlay-headline');
 var overlayText = document.getElementById('overlay-text');
 var closingButton = document.getElementById('closing-button');
 
+var rulesContent = '{"rules":["1. use tabs to navigate", "2....."]}';
 
 rulesLink.addEventListener('click', openRules, false);
 leaderboardLink.addEventListener('click', openLeaderboard, false);
@@ -14,8 +15,10 @@ closingButton.addEventListener('click', off, false);
 
 function openRules(){
     overlay.style.display = "block";
+    var text = JSON.parse(rulesContent);
     overlayHeadline.textContent = ("Rules");
-    overlayText.textContent = ("1. Move the tiles using the keyboard arrows.");
+    overlayText.innerHTML = text.rules;
+    overlayText.innerHTML = overlayText.innerHTML.replace(",","</br>");
 }
 
 function openLeaderboard() {
