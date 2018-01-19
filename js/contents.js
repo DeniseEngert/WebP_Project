@@ -4,3 +4,6 @@ var rulesContent = '{"rules":["Use the keyboard arrows to move the tiles and joi
     '"When two equal numbers are in touch: they will add up.",' +
     '"With every move made the game will provide us another number.",' +
     '"If there are no free tiles on our grid: the game ends."]}';
+
+var documentationContent = '{"documentation": "Webprojekt von Denise Engert, Elisabeth Heine, Maik Henker im Rahmen des Kurses Webprogrammierung' +
+    'TH Brandenburg, WS 2017/18"}';
