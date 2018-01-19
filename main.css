@@ -830,12 +830,17 @@ hr {
 
 #overlay-container{
     color: white;
+    font-weight: bold;
     width: 100%;
     text-align: center;
     margin-top: 50px;
 }
 
-#overlay-text{}
+#overlay-text{
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 #overlay-text-container{
     padding: 20px;
