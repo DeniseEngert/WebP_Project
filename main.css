@@ -89,7 +89,7 @@ h1.title {
 
 .best-container, .score-container{
     margin: 3px;
-    background: #014147;;
+    background: radial-gradient(rgba(1, 65, 71, 0.5), #ffffff);
     border-radius: 3px;
     padding: 0 15px;
     color: #f9f6f2;
@@ -142,13 +142,11 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:before {
-    content: "Score  ";
-    font-weight: bold;
+    content: "Score:  ";
 }
 
 .best-container:before {
-    content: "Best  ";
-    font-weight: bold;
+    content: "Best:  ";
 }
 
 p {
@@ -599,8 +597,19 @@ hr {
     .heading {
         margin-bottom: 8px; }
 
-    .restart-button {
+    .restart-button{
         width: 20%;
+        margin: 5px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 32px;
+        padding: 0;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .share-score {
+        width: 40%;
         margin: 5px;
         font-size: 16px;
         height: 30px;

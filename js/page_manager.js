@@ -6,14 +6,12 @@ var overlay = document.getElementById('overlay');
 var overlayHeadline = document.getElementById('overlay-headline');
 var overlayText = document.getElementById('overlay-text');
 var closingButton = document.getElementById('closing-button');
-var shareScore = document.getElementsByClassName('share-score');
 
 rulesLink.addEventListener('click', openRules, false);
 leaderboardLink.addEventListener('click', openLeaderboard, false);
 infoLink.addEventListener('click', openInfo, false);
 documentationLink.addEventListener('click', openDocumentation, false);
 closingButton.addEventListener('click', off, false);
-shareScore.addEventListener('click', share, false);
 
 function openRules(){
     overlay.style.display = "block";
@@ -45,10 +43,6 @@ function openDocumentation() {
 function off() {
     if (overlay.style.display == "block"){
     overlay.style.display = "none";}
-}
-
-function share() {
-    return score;
 }
 
 $(document).ready(function () {
