@@ -68,10 +68,8 @@ h1.title {
     clear: both; }
 
 
-
-.restart-button {
+.restart-button, .share-score{
     margin: 3px;
-    background: #014147;
     border-radius: 3px;
     padding: 0 15px;
     text-decoration: none;
@@ -81,9 +79,17 @@ h1.title {
     text-align: center;
     float: left; }
 
+.restart-button{
+    background-color: #8D4A5C ;
+}
+
+.share-score{
+    background-color: #985E8E;
+}
+
 .best-container, .score-container{
     margin: 3px;
-    background: dimgrey;
+    background: #014147;;
     border-radius: 3px;
     padding: 0 15px;
     color: #f9f6f2;
