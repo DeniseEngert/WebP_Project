@@ -6,6 +6,7 @@ var overlay = document.getElementById('overlay');
 var overlayHeadline = document.getElementById('overlay-headline');
 var overlayText = document.getElementById('overlay-text');
 var closingButton = document.getElementById('closing-button');
+var i = "";
 
 rulesLink.addEventListener('click', openRules, false);
 leaderboardLink.addEventListener('click', openLeaderboard, false);
@@ -43,6 +44,7 @@ function openDocumentation() {
 function off() {
     if (overlay.style.display == "block"){
     overlay.style.display = "none";}
+    overlayText.textContent = ("");
 }
 
 $(document).ready(function () {
