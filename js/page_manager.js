@@ -6,6 +6,7 @@ var overlay = document.getElementById('overlay');
 var overlayHeadline = document.getElementById('overlay-headline');
 var overlayText = document.getElementById('overlay-text');
 var closingButton = document.getElementById('closing-button');
+var i = "";
 
 rulesLink.addEventListener('click', openRules, false);
 leaderboardLink.addEventListener('click', openLeaderboard, false);
@@ -31,6 +32,8 @@ function openInfo() {
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Info");
     overlayText.innerHTML = (i.html());
+    /* TODO <a class="twitter-timeline" href="https://twitter.com/gabrielecirulli?ref_src=twsrc%5Etfw">Tweets by gabrielecirulli</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+*/
 }
 
 function openDocumentation() {
@@ -43,6 +46,7 @@ function openDocumentation() {
 function off() {
     if (overlay.style.display == "block"){
     overlay.style.display = "none";}
+    overlayText.textContent = ("");
 }
 
 $(document).ready(function () {
