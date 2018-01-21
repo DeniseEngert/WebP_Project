@@ -32,6 +32,8 @@ function openInfo() {
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Info");
     overlayText.innerHTML = (i.html());
+    /* TODO <a class="twitter-timeline" href="https://twitter.com/gabrielecirulli?ref_src=twsrc%5Etfw">Tweets by gabrielecirulli</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+*/
 }
 
 function openDocumentation() {
