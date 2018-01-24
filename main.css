@@ -875,6 +875,7 @@ hr {
     margin: 5px;
 }
 
+/* Wikipedia content*/
 .references{
     display:none;
 }
@@ -884,18 +885,10 @@ hr {
 }
 
 table {
-    background-color: black;
-}
-
-tr {
-    border-style: none;
-    background-color: black;
-}
-
-td {
-    border-style: none;
-    background-color: black;
-    width: 50%;
+    margin-left: 5%;
+    background: none;
+    border: solid white 1px;
+    padding: 2%;
 }
 
 a {
