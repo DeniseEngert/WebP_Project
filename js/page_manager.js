@@ -23,6 +23,7 @@ function openRules(){
 }
 
 function openLeaderboard() {
+
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Leaderboard");
     overlayText.textContent = ("");
@@ -53,7 +54,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: "GET",
-        url: "http://de.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=2048_(Computerspiel)&callback=?",
+        url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=2048_(video_game)&callback=?",
         contentType: "application/json; charset=utf-8",
         async: false,
         dataType: "json",

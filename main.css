@@ -875,6 +875,33 @@ hr {
     margin: 5px;
 }
 
+.references{
+    display:none;
+}
+
+.reference {
+    display: none;
+}
+
+table {
+    background-color: black;
+}
+
+tr {
+    border-style: none;
+    background-color: black;
+}
+
+td {
+    border-style: none;
+    background-color: black;
+    width: 50%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
 
 
 
