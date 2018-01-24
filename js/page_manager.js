@@ -61,6 +61,7 @@ $(document).ready(function () {
 
             var markup = data.parse.text["*"];
             i = $('<div></div>').html(markup);
+            $('#article').html($(blurb).find('p'));
 
             // remove links as they will not work
             i.find('a').each(function () {
