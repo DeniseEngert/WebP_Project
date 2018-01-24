@@ -889,6 +889,7 @@ table {
     background: none;
     border: solid white 1px;
     padding: 2%;
+    border-radius: 3px;
 }
 
 a {
