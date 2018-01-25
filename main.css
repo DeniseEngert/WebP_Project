@@ -54,15 +54,33 @@ li a {
 /* Heading and game control elements */
 .heading:after {
     content: "";
+    display: block;
     clear: both;
 }
 
 h1.title {
+    width: 500px;
     font-size: 60px;
     font-weight: bold;
-    float: left;
-    margin: 20px;
+    margin: 0px;
+    margin-top:20px;
+    display: block;
+    float: left; 
+    text-align: center;
 }
+
+.button-container {
+        width: 250px;
+        height: 46px;
+        float: left;
+        margin-top: 20px; }
+   
+.scores-container {
+        width: 250px;
+        height: 46px;
+        float: right;
+        margin-top: 20px; }
+        
 
 .above-game:after {
     content: "";
@@ -98,7 +116,7 @@ h1.title {
     height: 40px;
     line-height: 42px;
     text-align: center;
-    float: left;
+    float: right;
 }
 
 
@@ -171,7 +189,7 @@ hr {
 
 /* Game container */
 .container {
-    width: 540px;
+    width: 500px;
     margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
@@ -587,14 +605,38 @@ hr {
 
     h1.title {
         font-size: 28px;
-        margin-top: 10px; }
-
+        margin-top: 10px;
+        width: 280px; 
+        text-align: left; }
+        
     .container {
         width: 280px;  }
 
-    .score-container, .best-container {
+    .button-container {
+        width: 280px;
+        height: 46px;
+        float: left;
+        margin-top: 0px; }
+   
+    .scores-container {
+        width: 280px;
+        height: 46px;
+        float: left;
+        margin-top: 0px;        }    
+        
+    .score-container {
         margin: 5px;
-        min-width: 40px; }
+        min-width: 40px;
+        text-align: center;
+        float: left; }
+       
+    .best-container {
+        margin: 5px;
+        margin: 5px;
+        margin-left: 0px;
+        min-width: 40px;
+        text-align: center;
+        float: right; }
 
     .heading {
         margin-bottom: 8px; }
@@ -602,6 +644,7 @@ hr {
     .restart-button{
         width: 20%;
         margin: 5px;
+        margin-left: 0px;
         font-size: 16px;
         height: 30px;
         line-height: 32px;
@@ -619,10 +662,13 @@ hr {
         padding: 0;
         display: block;
         box-sizing: border-box;
+        float: right;
     }
 
     .game-container {
-        margin: 10px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
         position: relative;
         padding: 10px;
         cursor: default;
@@ -901,3 +947,7 @@ a {
     margin: 15%;
     padding: 5%;
 }
+
+.link-icon {
+    width: 30px;
+    height: 30px; }

@@ -33,10 +33,14 @@ function openInfo() {
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Info");
     overlayText.innerHTML = (i.html());
+    var twittericon = document.createElement('img');
+    twittericon.setAttribute("src", "./icons/twitter-icon.png");
+    twittericon.setAttribute("class", "link-icon");
     var twitterlink = document.createElement('a');
     twitterlink.setAttribute("href", "https://twitter.com/gabrielecirulli?ref_src=twsrc%5Etfw");
     twitterlink.setAttribute("class", "twitter-timeline");
     twitterlink.textContent = ("Gabriele Cirulli on twitter");
+    overlayText.appendChild(twittericon);
     overlayText.appendChild(twitterlink);
 }
 

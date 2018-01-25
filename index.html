@@ -28,11 +28,13 @@
         <h1 class="title">Webprojekt 2048</h1>
     </div>
     <div class="above-game">
-        <a class="restart-button">Play!</a>
-        <a class="share-score">Share score!</a>
+        <div class="button-container">
+            <a class="restart-button">Play!</a>
+            <a class="share-score">Share score!</a>
+        </div>
         <div class="scores-container">
-            <div class="score-container">0</div>
             <div class="best-container">0</div>
+            <div class="score-container">0</div>
         </div>
     </div>
 
@@ -80,24 +82,25 @@
 <div id="overlay">
     <div id="overlay-container">
         <a id="closing-button"> <img src="icons/ic_clear_white_48dp_1x.png"></a>
-        <div id="overlay-text-container"></div>
+        <div id="overlay-text-container">
             <h1 id="overlay-headline"></h1>
             <p id="overlay-text"></p>
-         </div>
+        </div>
     </div>
 </div>
-    <script src="js/bind_polyfill.js"></script>
-    <script src="js/classlist_polyfill.js"></script>
-    <script src="js/animframe_polyfill.js"></script>
-    <script src="js/keyboard_input_manager.js"></script>
-    <script src="js/html_actuator.js"></script>
-    <script src="js/grid.js"></script>
-    <script src="js/tile.js"></script>
-    <script src="js/local_storage_manager.js"></script>
-    <script src="js/game_manager.js"></script>
-    <script src="js/application.js"></script>
-    <script src="js/page_manager.js"></script>
-    <script src="js/contents.js"></script>
-    <script src="js/score_sharing.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+    <script type="text/javascript" src="js/bind_polyfill.js"></script>
+    <script type="text/javascript" src="js/classlist_polyfill.js"></script>
+    <script type="text/javascript" src="js/animframe_polyfill.js"></script>
+    <script type="text/javascript" src="js/keyboard_input_manager.js"></script>
+    <script type="text/javascript" src="js/html_actuator.js"></script>
+    <script type="text/javascript" src="js/grid.js"></script>
+    <script type="text/javascript" src="js/tile.js"></script>
+    <script type="text/javascript" src="js/local_storage_manager.js"></script>
+    <script type="text/javascript" src="js/game_manager.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="js/page_manager.js"></script>
+    <script type="text/javascript" src="js/contents.js"></script>
+    <script type="text/javascript" src="js/score_sharing.js"></script>
 </body>
 </html>
