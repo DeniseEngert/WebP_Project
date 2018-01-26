@@ -33,15 +33,17 @@ function openInfo() {
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Info");
     overlayText.innerHTML = (i.html());
+    var linkcontainer = document.createElement('div');
+    linkcontainer.textContent = ("Gabriele Cirulli on ");
+    linkcontainer.setAttribute("class", "twitter-link");
     var twittericon = document.createElement('img');
     twittericon.setAttribute("src", "./icons/twitter-icon.png");
     twittericon.setAttribute("class", "link-icon");
     var twitterlink = document.createElement('a');
     twitterlink.setAttribute("href", "https://twitter.com/gabrielecirulli?ref_src=twsrc%5Etfw");
-    twitterlink.setAttribute("class", "twitter-timeline");
-    twitterlink.textContent = ("Gabriele Cirulli on twitter");
-    overlayText.appendChild(twittericon);
-    overlayText.appendChild(twitterlink);
+    twitterlink.appendChild(twittericon);
+    linkcontainer.appendChild(twitterlink);
+    overlayText.appendChild(linkcontainer);
 }
 
 function openDocumentation() {
