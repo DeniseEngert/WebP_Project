@@ -621,22 +621,18 @@ hr {
     .scores-container {
         width: 280px;
         height: 46px;
-        float: left;
-        margin-top: 0px;        }    
+        margin-top: 0px;        }
         
     .score-container {
         margin: 5px;
         min-width: 40px;
-        text-align: center;
-        float: left; }
+        text-align: center;}
        
     .best-container {
         margin: 5px;
-        margin: 5px;
-        margin-left: 0px;
         min-width: 40px;
         text-align: center;
-        float: right; }
+    }
 
     .heading {
         margin-bottom: 8px; }
@@ -662,7 +658,6 @@ hr {
         padding: 0;
         display: block;
         box-sizing: border-box;
-        float: right;
     }
 
     .game-container {
@@ -921,7 +916,7 @@ hr {
     margin: 5px;
 }
 
-/* Wikipedia content*/
+/* Wikipedia content */
 .references{
     display:none;
 }
@@ -942,7 +937,7 @@ a {
     color: white;
 }
 
-/* Twitter link*/
+/* Twitter link */
 .twitter-link {
     margin-top: 5%;
 }
