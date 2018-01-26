@@ -943,11 +943,11 @@ a {
 }
 
 /* Twitter link*/
-.twitter-timeline {
-    margin: 15%;
-    padding: 5%;
+.twitter-link {
+    margin-top: 5%;
 }
 
 .link-icon {
     width: 30px;
-    height: 30px; }
+    height: 30px;
+    padding-top: 2%;}
