@@ -6,6 +6,7 @@
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<!-- Eigenentwicklung, Navi-Leiste als Liste, Anordnung per CSS -->
 <div class="navigation-bar">
     <ul>
         <li>
@@ -19,7 +20,7 @@
         </li>
     </ul>
 </div>
-
+<!-- durch uns modifzierter Inhalts-Container -->
 <div class="container">
     <div class="heading">
         <h1 class="title">Webprojekt 2048</h1>
@@ -46,7 +47,7 @@
                 <a class="retry-button">Try again</a>
             </div>
         </div>
-
+        <!-- das Hintergrund-Netz des Spiels, Farbe und Format durch CSS -->
         <div class="grid-container">
             <div class="grid-row">
                 <div class="grid-cell"></div>
@@ -73,12 +74,13 @@
                 <div class="grid-cell"></div>
             </div>
         </div>
-
+        <!-- hier wird durch HTML-actuator.js per DOM jeweils die Kacheln
+            eingefügt-->
         <div class="tile-container">
         </div>
     </div>
 </div>
-
+<!-- Eigenentwicklung Vollbild-Overlay-Container, Inhalt per JS -->
 <div id="overlay">
     <div id="overlay-container">
         <a id="closing-button"> <img src="icons/ic_clear_white_48dp_1x.png"></a>
@@ -88,6 +90,7 @@
         </div>
     </div>
 </div>
+    <!-- JavaScript Einbindung, der Spiele-Dateien und eigener Page-Manager / Content-Datei -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
     <script type="text/javascript" src="js/bind_polyfill.js"></script>
     <script type="text/javascript" src="js/classlist_polyfill.js"></script>

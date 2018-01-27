@@ -1,3 +1,5 @@
+//Übernommen. Spielstand-Speicher im Browser-Storage
+
 window.fakeStorage = {
   _data: {},
 

@@ -1,3 +1,7 @@
+// Pagemanager komplette Eigenentwicklung
+// Überführung der Menü-Elemente in Variabeln
+// Variable i für Wikipedia-Inhalt
+
 var rulesLink = document.getElementById('rules');
 var infoLink = document.getElementById('info');
 var documentationLink = document.getElementById('documentation');
@@ -7,11 +11,14 @@ var overlayText = document.getElementById('overlay-text');
 var closingButton = document.getElementById('closing-button');
 var i = "";
 
+// Klick-Events hinzufügen
 rulesLink.addEventListener('click', openRules, false);
 infoLink.addEventListener('click', openInfo, false);
 documentationLink.addEventListener('click', openDocumentation, false);
 closingButton.addEventListener('click', off, false);
 
+// Rules-Overlay anzeigen
+// Inhalt aus JSON-Datei lesen und per DOM einfügen 
 function openRules(){
     overlay.style.display = "block";
     var text = JSON.parse(rulesContent);
@@ -20,6 +27,10 @@ function openRules(){
     overlayText.innerHTML = overlayText.innerHTML.replace(/,/g,"<br>");
 }
 
+// Info-Overlay anzeigen
+// Inhalt per DOM einfügen
+// twitter-Link und twitter-Icon per DOM einfügen
+// i enthält Wikipedia-Inhalt
 function openInfo() {
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Info");
@@ -37,6 +48,9 @@ function openInfo() {
     overlayText.appendChild(linkcontainer);
 }
 
+// Documentation-Overlay anzeigen
+// Inhalt aus JSON-Datei lesen und per DOM einfügen
+// iframe mit Anzeige der PDF-Datei aus Google-Drive
 function openDocumentation() {
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Documentation");
@@ -47,12 +61,14 @@ function openDocumentation() {
     overlayText.appendChild(pdfcontainer);
 }
 
+// Ausblenden des Overlay
 function off() {
     if (overlay.style.display == "block"){
     overlay.style.display = "none";}
     overlayText.textContent = ("");
 }
 
+// Einbindung Wikipedia-Artikel, Speichern in Variable i
 $(document).ready(function () {
     $.ajax({
         type: "GET",

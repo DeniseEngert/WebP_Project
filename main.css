@@ -1,3 +1,7 @@
+/* Übernahme und Modifizierung der Spiele-CSS */
+/* Viele CSS-Befehle sind durch uns angepasst bzw. erweitert worden */
+/* Eigenentwicklungen sind mit "Eigenentwicklung markiert" */
+
 @import url('http://fonts.googleapis.com/css?family=Ubuntu:400,700');
 
 * {
@@ -19,7 +23,8 @@ body {
 }
 
 
-/* Navigation bar elements */
+/* Eigenentwicklung: Navigation bar elements */
+/* horizontale Darstellung der Menüliste*/
 .navigation-bar {
     background-color: black;
     padding: 18px;
@@ -51,6 +56,7 @@ li a {
 }
 
 
+/* Übernommen und Gestalung / Layout modifiziert /*
 /* Heading and game control elements */
 .heading:after {
     content: "";
@@ -117,7 +123,7 @@ h1.title {
     float: right;
 }
 
-
+/* Übernommen, Aufwärts-Animation bei Punkte-Erhöhung */
 @-webkit-keyframes move-up {
     0% {
         top: 25px;
@@ -143,7 +149,7 @@ h1.title {
         top: -50px;
         opacity: 0; } }
 
-
+/* Übernommen, Layout / Gestaltung angepasst Punkte-Anzeigen*/
 .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -183,7 +189,7 @@ hr {
     margin-bottom: 30px; }
 
 
-/* Game container */
+/* Übernommen Game container / Game-Nachrichten und Fade-In der Kacheln */
 .container {
     width: 500px;
     margin: 0 auto; }
@@ -271,7 +277,7 @@ hr {
     display: block; }
 
 
-/* Grid elements*/
+/* Übernommen Grid elements (Spielhintergrund) Gestaltung angepasst */
 .grid-container {
     position: absolute;
     z-index: 1; }
@@ -296,7 +302,7 @@ hr {
     margin-right: 0; }
 
 
-/* Tiles */
+/* Tiles, Übernommen Gestaltung angepasst. Je nach Klasse durch DOM wird die Kachel positioniert */
 .tile-container {
     position: absolute;
     z-index: 2; }
@@ -423,6 +429,7 @@ hr {
     color: #f9f6f2;
     background: #756A2A;
     font-size: 45px; }
+/* Übernommen bei kleinem Fenster wird die Kachelbeschriftung verkleinert */
 @media screen and (max-width: 520px) {
     .tile.tile-128 .tile-inner {
         font-size: 25px; } }
@@ -464,6 +471,7 @@ hr {
 
 
 /* Appearance */
+/* Übernommen Erscheinungs-Animation der Kacheln */
 @-webkit-keyframes appear {
     0% {
         opacity: 0;
@@ -578,7 +586,7 @@ hr {
     animation-fill-mode: backwards; }
 
 
-/* Responsive design */
+/* Übernommen und Gestaltung angepasst Responsive design */
 @media screen and (max-width: 520px) {
     html, body {
         font-size: 15px; }
@@ -834,6 +842,7 @@ hr {
     .game-message .lower {
         margin-top: 30px !important; }
 
+/* Eigenentwicklung Layout / Gestaltung der Overlays*/
     #overlay {
         font-size: 14px;
   }
@@ -856,7 +865,7 @@ hr {
 }
 
 
-/* Overlays */
+/* Eigenentwicklung Overlays */
 #overlay {
     position: fixed;
     display: none;
@@ -901,7 +910,7 @@ hr {
     margin: 5px;
 }
 
-/* Wikipedia content */
+/* Eigenentwicklung Wikipedia content */
 .references{
     display:none;
 }
@@ -922,7 +931,7 @@ a {
     color: white;
 }
 
-/* Twitter link */
+/* Eigenentwicklung Twitter link */
 .twitter-link {
     margin-top: 5%;
 }

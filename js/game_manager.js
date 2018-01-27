@@ -1,3 +1,4 @@
+// Übernommen, Instanzierung der nötigen Klassen
 function GameManager(size, InputManager, Actuator, StorageManager) {
   this.size           = size; // Size of the grid
   this.inputManager   = new InputManager;
@@ -32,6 +33,7 @@ GameManager.prototype.isGameTerminated = function () {
 };
 
 // Set up the game
+// neues Grid instanzieren
 GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
 
