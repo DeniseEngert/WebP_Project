@@ -51,6 +51,9 @@ function openDocumentation() {
     overlayHeadline.textContent = ("Documentation");
     var text = JSON.parse(documentationContent);
     overlayText.innerHTML = text.documentation;
+    var pdfcontainer = document.createElement('div');
+    pdfcontainer.innerHTML = ('<iframe src="https://drive.google.com/file/d/1iIdQecmZv-CedchOMoOKJyREa7UPK8-P/preview" width="640" height="480"></iframe>');
+    overlayText.appendChild(pdfcontainer);
 }
 
 function off() {
