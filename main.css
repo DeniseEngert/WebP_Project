@@ -108,10 +108,10 @@ h1.title {
 }
 
 .best-container, .score-container{
-    margin: 3px;
+    margin: 2px;
     background: radial-gradient(rgba(1, 65, 71, 0.5), #ffffff);
     border-radius: 3px;
-    padding: 0 15px;
+    padding: 0 10px;
     color: #f9f6f2;
     height: 40px;
     line-height: 42px;
