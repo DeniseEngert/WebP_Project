@@ -175,9 +175,7 @@ p {
     line-height: 1.65; }
 
 a {
-    color: #030303;
     font-weight: bold;
-    text-decoration: underline;
     cursor: pointer; }
 
 hr {

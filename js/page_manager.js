@@ -37,7 +37,7 @@ function openInfo() {
     linkcontainer.textContent = ("Gabriele Cirulli on ");
     linkcontainer.setAttribute("class", "twitter-link");
     var twittericon = document.createElement('img');
-    twittericon.setAttribute("src", "./icons/twitter-icon.png");
+    twittericon.setAttribute("src", "icons/twitter-icon.png");
     twittericon.setAttribute("class", "link-icon");
     var twitterlink = document.createElement('a');
     twitterlink.setAttribute("href", "https://twitter.com/gabrielecirulli?ref_src=twsrc%5Etfw");
