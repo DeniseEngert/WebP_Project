@@ -88,7 +88,7 @@ h1.title {
     clear: both; }
 
 
-.restart-button, .share-score{
+.restart-button{
     margin: 3px;
     border-radius: 3px;
     padding: 0 15px;
@@ -101,10 +101,6 @@ h1.title {
 
 .restart-button{
     background-color: #8D4A5C ;
-}
-
-.share-score{
-    background-color: #985E8E;
 }
 
 .best-container, .score-container{
@@ -639,17 +635,6 @@ hr {
         width: 20%;
         margin: 5px;
         margin-left: 0px;
-        font-size: 16px;
-        height: 30px;
-        line-height: 32px;
-        padding: 0;
-        display: block;
-        box-sizing: border-box;
-    }
-
-    .share-score {
-        width: 40%;
-        margin: 5px;
         font-size: 16px;
         height: 30px;
         line-height: 32px;
