@@ -136,8 +136,9 @@ HTMLActuator.prototype.message = function (won) {
   // Funktion  eingabePunkte(spielername, this.score)
   // Oder action="eingabe.php?=spielername,this.score)" oder wie das geht 
   this.messageContainer.getElementsByTagName("p")[0].innerHTML = 
-    "<form action=\"eingabeDB.php\" onsubmit=\"eingabePunkte(spielername, " + this.score + " )\;\"> \
+    "<form name = \"DBin\" action=\"DB_eingabe_alt.php\" method = \"post\"> \
         <input type=\"text\" name=\"spielername\" size=\"30\" maxlength=\"30\"> \
+        <input type=\"hidden\" name=\"punkte\" value=\"" + this.score + "\"> \
         <input type=\"submit\" value=\"Eintragen\"> \
     </form> \
     <br><br>" + message + "( " + (this.score) + " )";
