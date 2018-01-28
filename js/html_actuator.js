@@ -129,7 +129,18 @@ HTMLActuator.prototype.message = function (won) {
   var message = won ? "You win!" : "Game over!";
 
   this.messageContainer.classList.add(type);
-  this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  // MHMH this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  //
+  // für Debugging werden Punkte hinter Game-Over (Punkte) geschrieben
+  // bei action und onsubmit anpassen
+  // Funktion  eingabePunkte(spielername, this.score)
+  // Oder action="eingabe.php?=spielername,this.score)" oder wie das geht 
+  this.messageContainer.getElementsByTagName("p")[0].innerHTML = 
+    "<form action=\"eingabeDB.php\" onsubmit=\"eingabePunkte(spielername, " + this.score + " )\;\"> \
+        <input type=\"text\" name=\"spielername\" size=\"30\" maxlength=\"30\"> \
+        <input type=\"submit\" value=\"Eintragen\"> \
+    </form> \
+    <br><br>" + message + "( " + (this.score) + " )";
 };
 
 HTMLActuator.prototype.clearMessage = function () {
