@@ -137,7 +137,7 @@ HTMLActuator.prototype.message = function (won) {
         <input type=\"hidden\" name=\"punkte\" value=\"" + this.score + "\"> \
         <input id=\"nameEingabe-Button\" type=\"submit\" value=\"Eintragen\"> \
     </form> \
-    <br><br>" + message + "( " + (this.score) + " )";
+    <br><br>" + message;
 };
 
 HTMLActuator.prototype.clearMessage = function () {

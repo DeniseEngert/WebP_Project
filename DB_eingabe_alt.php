@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="uft-8">
+        <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <style>
+        body {background: darkgrey; margin: 10%;}
+        p {color: white; font-weight: bold;}
+        </style>
 
         <?php
 
+        ob_start();
+
 
             /* Datenbankverbindung */
-            $db = mysqli_connect("localhost", "root", "", "wp2048");
+            $db = mysqli_connect("localhost", "wp2048", "17Project!!", "wp2048");
 
             if(!$db)
             {
@@ -24,21 +31,16 @@
             /* Verbindung schliessen */
             mysqli_close($db);
 
-            header('Location: index.html');
-            exit;
+
+            /* Startseite mit neuem Spiel aufrufen */
+            /*header('Location: index.html');*/
+            /*exit;*/
         ?>
     </head>
-    <body>
-    <!-- Debugging
-        <p> Namen eingeben </>
-        <form name = "DBin" action = "DB_eingabe_alt.php" method = "post">
-            <p><input name = "name"> Name</p>
-            <p><input name = "score" > Score</p>
-            <p><input type = "submit" name = "gesendet">
-            <input type = "reset"></p>
-        </form>
 
-    <p>Alle <a href="DB_abfrage.php">anzeigen</a></p>
-    -->
+    <body>
+    <p></p>
+    <p> Dein Punktestand wurde erfolgreich eingetragen.</p>
+    <p> <a href="http://wp2048.bplaced.net/DB_Test/" color: > Neues Spiel?</a></p>
     </body>
 </html>

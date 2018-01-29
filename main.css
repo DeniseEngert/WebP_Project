@@ -940,3 +940,63 @@ a {
     width: 30px;
     height: 30px;
     padding-top: 2%;}
+
+
+/* Eigenentwicklung Formular Score-Abfrage */
+#punkte-Formular{
+}
+
+#nameEingabe-Button{
+    border-radius: 3px;
+    border: none;
+    width: 70px;
+    background: #8C8AB0;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2px;
+}
+
+#punkte-EingabeZeile{
+    border-radius: 3px;
+    border: none;
+    padding: 2px;
+}
+
+/* Eigenentwicklung Tabelle Leaderboard*/
+#db-tabelle {
+    background: transparent !important;   
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    text-align: left;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 10%;
+    
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    background: #f6f6f6;
+    color: #030303;
+    font-family: Ubuntu, sans-serif;
+    font-size: 18px;
+    overflow: auto;
+    -webkit-overflow-scroll: touch;
+}
+
+.score-table{
+    border: none;
+    font-family: Ubuntu, sans-serif;
+    color: #ffffff;
+    min-width:300px;
+    height: 30px;
+    padding: 10px;
+}
