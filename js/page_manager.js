@@ -34,7 +34,13 @@ function openRules(){
 function openLeaderboard() {
     overlay.style.display = "block";
     overlayHeadline.textContent = ("Leaderboard");
-    overlayText.textContent = (" ");
+    overlayText.innerHTML =  '<table class="score-table">' +
+        '<th class="table-header">Name</th>'+
+        '<th class="table-header">Score</th>'+
+        '<tr class="table-row"></tr>'+
+        '<td class="table-data">test</td>'+
+        '<td class="table-data">test</td>'
+
 }
 
 // Info-Overlay anzeigen
