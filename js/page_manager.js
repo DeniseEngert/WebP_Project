@@ -3,6 +3,7 @@
 // Variable i für Wikipedia-Inhalt
 
 var rulesLink = document.getElementById('rules');
+var leaderboardLink = document.getElementById('leaderboard');
 var infoLink = document.getElementById('info');
 var documentationLink = document.getElementById('documentation');
 var overlay = document.getElementById('overlay');
@@ -13,6 +14,7 @@ var i = "";
 
 // Klick-Events hinzufügen
 rulesLink.addEventListener('click', openRules, false);
+leaderboardLink.addEventListener('click', openLeaderboard, false);
 infoLink.addEventListener('click', openInfo, false);
 documentationLink.addEventListener('click', openDocumentation, false);
 closingButton.addEventListener('click', off, false);
@@ -25,6 +27,54 @@ function openRules(){
     overlayHeadline.textContent = ("Rules");
     overlayText.innerHTML = text.rules;
     overlayText.innerHTML = overlayText.innerHTML.replace(/,/g,"<br>");
+}
+
+// Rules-Overlay anzeigen
+// Inhalt aus DB anzeigen
+function openLeaderboard() {
+    overlay.style.display = "block";
+    overlayHeadline.textContent = ("Leaderboard");
+    /*overlayText.innerHTML =  '<table class="score-table">' +
+        '<th class="table-header">Name</th>'+
+        '<th class="table-header">Score</th>'+
+        '<tr class="table-row">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-one">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-two">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row"id="tr-three">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-four">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-five">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-six">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row">'+
+            '<td class="table-data" id="tr-seven">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-eight">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-nine">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-ten">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'
+            */
+    var highscorecontainer = document.createElement('div');
+    highscorecontainer.innerHTML = ('<iframe src="./DB_ausgabe.php" width="400" height="400" frameBorder="0"></iframe>');
+    overlayText.appendChild(highscorecontainer);
+
 }
 
 // Info-Overlay anzeigen

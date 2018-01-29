@@ -129,19 +129,15 @@ HTMLActuator.prototype.message = function (won) {
   var message = won ? "You win!" : "Game over!";
 
   this.messageContainer.classList.add(type);
-  // MHMH this.messageContainer.getElementsByTagName("p")[0].textContent = message;
-  //
-  // für Debugging werden Punkte hinter Game-Over (Punkte) geschrieben
-  // bei action und onsubmit anpassen
-  // Funktion  eingabePunkte(spielername, this.score)
-  // Oder action="eingabe.php?=spielername,this.score)" oder wie das geht 
+  //this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  // Eigenentwicklung Eingabe-Forumlar für Spielername bei Game-Over-Nachricht
   this.messageContainer.getElementsByTagName("p")[0].innerHTML = 
-    "<form name = \"DBin\" action=\"DB_eingabe_alt.php\" method = \"post\"> \
-        <input type=\"text\" name=\"spielername\" size=\"30\" maxlength=\"30\"> \
+    "<form id=\"punkte-Formular\" name = \"DBin\" action=\"DB_eingabe_alt.php\" method = \"post\"> \
+        <input id=\"punkte-EingabeZeile\" type=\"text\" name=\"spielername\" size=\"30\" maxlength=\"30\"> \
         <input type=\"hidden\" name=\"punkte\" value=\"" + this.score + "\"> \
-        <input type=\"submit\" value=\"Eintragen\"> \
+        <input id=\"nameEingabe-Button\" type=\"submit\" value=\"Eintragen\"> \
     </form> \
-    <br><br>" + message + "( " + (this.score) + " )";
+    <br><br>" + message;
 };
 
 HTMLActuator.prototype.clearMessage = function () {

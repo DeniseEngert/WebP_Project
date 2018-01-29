@@ -39,7 +39,7 @@ KeyboardInputManager.prototype.listen = function () {
     39: 1, // Right
     40: 2, // Down
     37: 3, // Left
-    // MHMH stört bei Namenseingabe
+    //MHMH stört bei Namenseingabe
     //75: 0, // Vim up
     //76: 1, // Vim right
     //74: 2, // Vim down
@@ -64,9 +64,10 @@ KeyboardInputManager.prototype.listen = function () {
     }
 
     // R key restarts the game
-    if (!modifiers && event.which === 82) {
-      self.restart.call(self, event);
-    }
+    //MHMH stört bei Namenseingabe
+    //if (!modifiers && event.which === 82) {
+    //  self.restart.call(self, event);
+    //}
   });
 
   // Respond to button presses
