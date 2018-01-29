@@ -18,10 +18,12 @@ window.fakeStorage = {
   }
 };
 
-function LocalStorageManager() {
-  this.bestScoreKey     = "bestScore";
-  this.gameStateKey     = "gameState";
-
+function LocalStorageManager(size) {
+  this.bestScoreKey     = "bestScore" + size;
+  this.gameStateKey     = "gameState" + size;
+  //MHMH
+  //alert(this.bestScoreKey + "  " + this.gameStateKey);
+  
   var supported = this.localStorageSupported();
   this.storage = supported ? window.localStorage : window.fakeStorage;
 }

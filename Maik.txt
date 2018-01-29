@@ -1,0 +1,38 @@
+Meine Hacks sind mit Quell-Code mit //MHMH markiert.
+
+im Moment habe ich nur eine Grafik (CSS) für 4x4x und 5x5 und ohne Responsive gemacht um möglichst schnell ans Javascript ran zu können.
+Schriftgrößen, Responsive und 6x6 sind aber kein Problem. Die CSS ist bereits entsprechend aufgeteilt.
+
+----------------------------------------
+keyboard_input_manager:
+
+die bindButtons für restart sind auskommentiert, da restart über page_manager
+
+----------------------------------------
+local_storage_manager:
+
+übergabe der Größe an den Handle für bestScore und gamestate um diese zu unterscheiden
+
+----------------------------------------
+game_manager:
+bei prototype.setup den if-ZWeig mit if(false) ausgeschaltet, sodass immer ein neuer gamestate geladen wird, statt des previousState
+
+----------------------------------------
+page_manager
+DOM Änderung der DIV Blöcke
+restart-Bindungs
+
+----------------------------------------
+
+derzeitige Probleme:
+
+1. 	Start mit 4x4 bei Seitenaufruf
+	Bestscore bereits mit Wert (woher? das Laden des letzten Status ist ausgeschaltet)
+	sobald man den Bestscore beim spielen überbietet, zählt dieser hoch, jedoch eben mit größeren Werten als der derzeitige Score
+
+2. 	Ist man Gameover, kann man trotzdem die Variante wechseln und 	diese unter dem Gameover-Overlay weiterspielen (dafür ist aber 	auch nichts programmiert)
+
+3.	Gameover kommt auch obwohl noch gar nicht Gameover ist (meist bei 4x4)
+
+4.	insbesondere wenn man schnell spielt (wahllos im Kreis spielen)
+	wird mitten im Spiel ein anderer Stand (kacheln und Bestscore) geladen obwohl das Laden eines alten Status ausgeschaltet ist

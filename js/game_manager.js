@@ -1,7 +1,7 @@
 function GameManager(size, InputManager, Actuator, StorageManager) {
   this.size           = size; // Size of the grid
   this.inputManager   = new InputManager;
-  this.storageManager = new StorageManager;
+  this.storageManager = new StorageManager(size); //MHMH
   this.actuator       = new Actuator;
 
   this.startTiles     = 2;
@@ -17,7 +17,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 GameManager.prototype.restart = function () {
   this.storageManager.clearGameState();
   this.actuator.continueGame(); // Clear the game won/lost message
-  this.setup();
+  //MHMH this.setup();
 };
 
 // Keep playing after winning (allows going over 2048)
@@ -36,13 +36,16 @@ GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
 
   // Reload the game from a previous game if present
-  if (previousState) {
+  //MHMH if (previousState) {
+  if (false) {
     this.grid        = new Grid(previousState.grid.size,
                                 previousState.grid.cells); // Reload grid
     this.score       = previousState.score;
     this.over        = previousState.over;
     this.won         = previousState.won;
     this.keepPlaying = previousState.keepPlaying;
+    //MHMH
+    alert("sollte nie ausgeführt werden");
   } else {
     this.grid        = new Grid(this.size);
     this.score       = 0;

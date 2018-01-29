@@ -69,9 +69,16 @@ KeyboardInputManager.prototype.listen = function () {
   });
 
   // Respond to button presses
-  this.bindButtonPress(".retry-button", this.restart);
-  this.bindButtonPress(".restart-button", this.restart);
-  this.bindButtonPress(".keep-playing-button", this.keepPlaying);
+  //this.bindButtonPress(".retry-button", this.restart);
+  //this.bindButtonPress(".restart-button", this.restart);
+  //MHMH
+  this.bindButtonPress("retry-button", this.restart);
+  //this.bindButtonPress("restart4x4", this.restart);
+  //this.bindButtonPress("restart5x5", this.restart);
+  //this.bindButtonPress("restart6x6", this.restart);
+  this.bindButtonPress("keep-playing-button", this.keepPlaying);
+  
+  //this.bindButtonPress(".keep-playing-button", this.keepPlaying);
 
   // Respond to swipe events
   var touchStartClientX, touchStartClientY;
@@ -138,7 +145,11 @@ KeyboardInputManager.prototype.keepPlaying = function (event) {
 };
 
 KeyboardInputManager.prototype.bindButtonPress = function (selector, fn) {
-  var button = document.querySelector(selector);
+  //MHMH
+  //var button = document.querySelector(selector);
+  //alert(selector);
+  var button = document.getElementById(selector);
+  
   button.addEventListener("click", fn.bind(this));
   button.addEventListener(this.eventTouchend, fn.bind(this));
 };
