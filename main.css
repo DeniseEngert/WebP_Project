@@ -962,3 +962,8 @@ a {
     border: none;
     padding: 2px;
 }
+
+/* Eigenentwicklung Tabelle Leaderboard*/
+.score-table{
+    border: none;
+}

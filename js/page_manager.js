@@ -37,9 +37,39 @@ function openLeaderboard() {
     overlayText.innerHTML =  '<table class="score-table">' +
         '<th class="table-header">Name</th>'+
         '<th class="table-header">Score</th>'+
-        '<tr class="table-row"></tr>'+
-        '<td class="table-data">test</td>'+
-        '<td class="table-data">test</td>'
+        '<tr class="table-row">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-one">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-two">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row"id="tr-three">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-four">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-five">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-six">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row">'+
+            '<td class="table-data" id="tr-seven">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-eight">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-nine">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'+
+        '<tr class="table-row" id="tr-ten">'+
+            '<td class="table-data">test</td>'+
+            '<td class="table-data">test</td></tr>'
 
 }
 
