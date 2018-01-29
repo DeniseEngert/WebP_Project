@@ -940,3 +940,25 @@ a {
     width: 30px;
     height: 30px;
     padding-top: 2%;}
+
+
+/* Eigenentwicklung Formular Score-Abfrage */
+#punkte-Formular{
+    background: #000000;
+}
+
+#nameEingabe-Button{
+    border-radius: 3px;
+    border: none;
+    width: 30px;
+    background: #8C8AB0;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2px;
+}
+
+#punkte-EingabeZeile{
+    border-radius: 3px;
+    border: none;
+    padding: 2px;
+}

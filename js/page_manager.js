@@ -3,6 +3,7 @@
 // Variable i für Wikipedia-Inhalt
 
 var rulesLink = document.getElementById('rules');
+var leaderboardLink = document.getElementById('leaderboard');
 var infoLink = document.getElementById('info');
 var documentationLink = document.getElementById('documentation');
 var overlay = document.getElementById('overlay');
@@ -13,6 +14,7 @@ var i = "";
 
 // Klick-Events hinzufügen
 rulesLink.addEventListener('click', openRules, false);
+leaderboardLink.addEventListener('click', openLeaderboard, false);
 infoLink.addEventListener('click', openInfo, false);
 documentationLink.addEventListener('click', openDocumentation, false);
 closingButton.addEventListener('click', off, false);
@@ -25,6 +27,14 @@ function openRules(){
     overlayHeadline.textContent = ("Rules");
     overlayText.innerHTML = text.rules;
     overlayText.innerHTML = overlayText.innerHTML.replace(/,/g,"<br>");
+}
+
+// Rules-Overlay anzeigen
+// Inhalt aus DB anzeigen
+function openLeaderboard() {
+    overlay.style.display = "block";
+    overlayHeadline.textContent = ("Leaderboard");
+    overlayText.textContent = (" ");
 }
 
 // Info-Overlay anzeigen
