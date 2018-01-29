@@ -12,19 +12,19 @@
 
 
             /* Datenbankverbindung */
-            $db = mysqli_connect("localhost", "root", "", "wp2048");
+            $db = mysqli_connect("localhost", "wp2048", "17Project!!", "wp2048");
 
             if(!$db)
             {
                 exit("Verbindungsfehler: ".mysqli_connect_error());
             }
-            
+
             /* SQL Abfrage der besten 10, absteigend sortiert */
-            $sql = "SELECT Name, Score FROM wp2048.HighScore WHERE (Name IS NOT NULL) AND (Score > 0) ORDER BY Score DESC LIMIT 0, 10";
-            
+            $sql = "SELECT Name, Score FROM HighScore WHERE (Name IS NOT NULL) AND (Score > 0) ORDER BY Score DESC LIMIT 0, 10";
+
             /* Daten abfragen */
             $db_output = mysqli_query($db, $sql);
-            
+
             if ( ! $db_output )
             {
                 die('Ungültige Abfrage: ' . mysqli_error());
@@ -38,7 +38,7 @@
             echo        '<th>Name</th>';
             echo        '<th>Score</th>';
             echo    '</tr>';
-            
+
             while ($zeile = mysqli_fetch_array( $db_output, MYSQLI_ASSOC))
             {
                 echo "<tr>";
@@ -47,10 +47,10 @@
                 echo "</tr>";
             }
             echo "</table>";
- 
+
             mysqli_free_result( $db_output );
         ?>
-            
+
 
     </body>
 </html>
