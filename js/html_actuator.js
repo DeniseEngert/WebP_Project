@@ -129,7 +129,15 @@ HTMLActuator.prototype.message = function (won) {
   var message = won ? "You win!" : "Game over!";
 
   this.messageContainer.classList.add(type);
-  this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  //this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  // Eigenentwicklung Eingabe-Forumlar für Spielername bei Game-Over-Nachricht
+  this.messageContainer.getElementsByTagName("p")[0].innerHTML = 
+    "<form id=\"punkte-Formular\" name = \"DBin\" action=\"DB_eingabe_alt.php\" method = \"post\"> \
+        <input id=\"punkte-EingabeZeile\" type=\"text\" name=\"spielername\" size=\"30\" maxlength=\"30\"> \
+        <input type=\"hidden\" name=\"punkte\" value=\"" + this.score + "\"> \
+        <input id=\"nameEingabe-Button\" type=\"submit\" value=\"Eintragen\"> \
+    </form> \
+    <br><br>" + message + "( " + (this.score) + " )";
 };
 
 HTMLActuator.prototype.clearMessage = function () {
