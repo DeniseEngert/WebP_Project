@@ -4,8 +4,9 @@
         <meta charset="uft-8">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <link href="main.css" rel="stylesheet" type="text/css">
     </head>
-<body>
+<body id="db-tabelle">
 
         <?php
 
@@ -32,10 +33,10 @@
             /* Verbindung schliessen */
             mysqli_close($db);
 
-            echo '<table border="1">';
+            echo '<table border="0" class="score-table">';
             echo    '<tr>';
             echo        '<th>Name</th>';
-            echo        '<th>Punkte</th>';
+            echo        '<th>Score</th>';
             echo    '</tr>';
             
             while ($zeile = mysqli_fetch_array( $db_output, MYSQLI_ASSOC))

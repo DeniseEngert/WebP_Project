@@ -72,7 +72,7 @@ function openLeaderboard() {
             '<td class="table-data">test</td></tr>'
             */
     var highscorecontainer = document.createElement('div');
-    highscorecontainer.innerHTML = ('<iframe src="./DB_ausgabe.php" width="400" height="400" frameBorder="0"></iframe>');
+    highscorecontainer.innerHTML = ('<iframe src="./DB_ausgabe.php" width="500" height="500" frameBorder="0"></iframe>');
     overlayText.appendChild(highscorecontainer);
 
 }
