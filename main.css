@@ -944,13 +944,12 @@ a {
 
 /* Eigenentwicklung Formular Score-Abfrage */
 #punkte-Formular{
-    background: #000000;
 }
 
 #nameEingabe-Button{
     border-radius: 3px;
     border: none;
-    width: 30px;
+    width: 70px;
     background: #8C8AB0;
     font-weight: bold;
     color: #ffffff;
@@ -966,4 +965,6 @@ a {
 /* Eigenentwicklung Tabelle Leaderboard*/
 .score-table{
     border: none;
+    font-family: Ubuntu, sans-serif;
+    color: #ffffff;
 }
